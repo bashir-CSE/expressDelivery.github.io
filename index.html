@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>food delivery</title>
+
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- bpdy section is start here -->
+  <body>
+    <!-- navbar is start from here -->
+    <section class="container nav-section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+        <!-- nav logo -->
+        <nav class="navbar navbar-light bg-light nav-logo">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/fast-deli-logo.png"
+              width="75"
+              height="50"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+        </nav>
+        <!-- responsive nav bar toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- <i class="fas fa-bars"></i> -->
+          Menu
+        </button>
+        <!-- nav -->
+        <div class="collapse navbar-collapse mr-auto" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacts</a>
+            </li>
+          </ul>
+          <!-- button inside nav -->
+          <button
+            type="button"
+            class="btn"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            LOGIN
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content rounded-0">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Login here....
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="far fa-times-circle"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Write your Email"
+                      />
+                    </div>
+                    <div class="form-group mt-5">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        placeholder="Write your Password"
+                      />
+                    </div>
+                    <div class="form-group form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >Check me out</label
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn">SING UP</button>
+        </div>
+      </nav>
+    </section>
+
+    <!-- hero section is start from here -->
+    <section class="container hero-section pb-5">
+      <div class="row py-4">
+        <div class="col-md-6 col-sm-12 py-4">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>
+                Express <br />
+                <span>Fast Delivary</span>
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="hero-button mt-5">
+              <div class="btn" data-toggle="modal" data-target="#heroModal">
+                Lern more
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="heroModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content border-0">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        About Fast Delivery
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <i class="far fa-times-circle"></i>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ipsam explicabo neque quis laborum, porro saepe dolores
+                      voluptates nihil id fugiat consectetur laudantium corrupti
+                      debitis voluptatibus atque placeat perspiciatis est non
+                      perferendis. Magnam et quae obcaecati. Ratione, pariatur
+                      aliquam error consectetur cumque iusto corrupti ullam
+                      blanditiis doloremque voluptate ipsam, nostrum rem debitis
+                      odit suscipit corporis nemo vel soluta. Nisi eius libero
+                      suscipit inventore ex veritatis? Ad dolore natus
+                      consequuntur, reprehenderit debitis adipisci eius facere
+                      obcaecati itaque aperiam? Ratione aut asperiores quasi
+                      culpa a, voluptatum quia tempora ducimus natus vitae
+                      corporis perferendis suscipit eum? Quidem sapiente libero.
+                      <br />
+                      <br />
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Ipsam explicabo neque quis laborum, porro saepe dolores
+                      voluptates nihil id fugiat consectetur laudantium corrupti
+                      debitis voluptatibus atque placeat perspiciatis est non
+                      perferendis. Magnam et quae obcaecati. Ratione, pariatur
+                      aliquam error consectetur cumque iusto corrupti ullam
+                      blanditiis doloremque voluptate ipsam, nostrum rem debitis
+                      odit suscipit corporis nemo vel soluta. Nisi eius libero
+                      suscipit inventore ex veritatis? Ad dolore natus
+                      consequuntur, reprehenderit debitis adipisci eius facere
+                      obcaecati itaque aperiam? Ratione aut asperiores quasi
+                      culpa a, voluptatum quia tempora ducimus natus vitae
+                      corporis perferendis suscipit eum? Quidem sapiente libero.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn">Order now</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="hero-img">
+            <img src="./img/fast delyvery.png" alt="delivery logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular goods section -->
+    <section class="container-fluid popular">
+      <div class="row">
+        <div class="col-12">
+          <h1>popular goods</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- card section -->
+    <section class="container py-5 food-card-section">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 px-1">
+          <div class="card text-center border-0">
+            <div class="card-img">
+              <img
+                src="./img/burger-1-480x480.jpg"
+                class="img-fluid"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <!-- rating icon -->
+              <div class="rating-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <!-- card content -->
+              <div class="card-content">
+                <h5>Cheeseburger with Salad</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem.
+                </p>
+              </div>
+              <div class="price">
+                <span>$19.00</span>
+              </div>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 px-1">
+          <div class="card text-center border-0">
+            <div class="card-img">
+              <img
+                src="./img/burger-2-480x480.jpg"
+                class="img-fluid"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <!-- rating icon -->
+              <div class="rating-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <!-- card content -->
+              <div class="card-content">
+                <h5>Royal Cheeseburger with Bacon</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem.
+                </p>
+              </div>
+              <div class="price">
+                <span>$24.72</span>
+              </div>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 px-1">
+          <div class="card text-center border-0">
+            <div class="card-img">
+              <img
+                src="./img/burger-3-480x480.jpg"
+                class="img-fluid"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <!-- rating icon -->
+              <div class="rating-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <!-- card content -->
+              <div class="card-content">
+                <h5>Black Gambugrer with Fishcake</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem.
+                </p>
+              </div>
+              <div class="price">
+                <span>$20.35</span>
+              </div>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 px-1">
+          <div class="card text-center border-0">
+            <div class="card-img">
+              <img
+                src="./img/burger-4-480x480.jpg"
+                class="img-fluid"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body">
+              <!-- rating icon -->
+              <div class="rating-icon">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <!-- card content -->
+              <div class="card-content">
+                <h5>Classic Bacon Hamburger</h5>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem.
+                </p>
+              </div>
+              <div class="price">
+                <span>$15.98</span>
+              </div>
+              <a href="#" class="btn btn-primary">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- care section -->
+    <section class="container-fluid care">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 care-left"></div>
+        <div class="col-lg-6 col-md-6 col-sm-12 care-right">
+          <div class="care-content p-5">
+            <div class="care-text">
+              <h1>
+                Stay at home <br />
+                <span>We Will Take Care</span>
+              </h1>
+              <p>
+                Proin ornare posuere quam ut euismod. Nam eu nunc vitae orci
+                ultrices imperdiet ut id ligula. Sed interdum eros eget sagittis
+                rutrum. Vestibulum in elementum mauris. In iaculis odio urna.
+              </p>
+              <button class="btn customBtn">Read More</button>
+            </div>
+            <div class="care-icon">
+              <div>
+                <i class="far fa-clock"></i>
+                <p>Fast Delivery in 1 Hour</p>
+              </div>
+              <div>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Amazing Mobile App</p>
+              </div>
+              <div>
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Wide Coverage Map</p>
+              </div>
+              <div>
+                <i class="fas fa-truck"></i>
+                <p>More Than 150 Couriers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cafe section -->
+    <div class="cafe container my-5">
+      <div class="mb-4">
+        <p>Our Recommendations</p>
+        <h1>Cafes & Restaurants</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-12">
+          <!-- left card -->
+          <div class="card">
+            <div class="cardImg">
+              <img
+                src="./img/rest_01.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+            </div>
+
+            <div class="card-body border-0 px-3">
+              <h5>Burger House</h5>
+              <div class="base">
+                <i class="far fa-clock"></i>
+                <span>Monday - Saturday</span>
+              </div>
+              <div class="base">
+                <i class="far fa-clock"></i>
+                <span>09:00 - 18:00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right card site -->
+        <div class="col-md-6 col-lg-6 col-12">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-12 mb-4">
+              <div class="card">
+                <div class="cardImg">
+                  <img
+                    src="./img/rest_02-706x710.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title font-weight-bold">Restaurant Monaco</h6>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>Monday - Saturday</span>
+                  </div>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>09:00 - 18:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 mb-4">
+              <div class="card">
+                <div class="cardImg">
+                  <img
+                    src="./img/rest_03-706x710.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title font-weight-bold">Ribs and Beer</h6>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>Monday - Saturday</span>
+                  </div>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>09:00 - 18:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 mb-4">
+              <div class="card">
+                <div class="cardImg">
+                  <img
+                    src="./img/rest_04-706x710.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title font-weight-bold">Sushiteria</h6>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>Monday - Saturday</span>
+                  </div>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>09:00 - 18:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 mb-4">
+              <div class="card">
+                <div class="cardImg">
+                  <img
+                    src="./img/rest_05-706x710.jpg"
+                    class="card-img-top img-fluid"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title font-weight-bold">Happy Grill Cafe</h6>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>Monday - Saturday</span>
+                  </div>
+                  <div class="base">
+                    <i class="far fa-clock"></i>
+                    <span>09:00 - 18:00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center my-3">
+        <button class="customBtn text-center">View more</button>
+      </div>
+    </div>
+
+    <!-- hot pizza /*scroll bar/* -->
+    <section class="pizza container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="pizza-content">
+            <h1>
+              Always <br />
+              <span>Hottest Pizza</span>
+            </h1>
+            <p>
+              Curabitur imperdiet varius lacus, id placerat purus vulputate non.
+              Fusce in felis vel arcu maximus placerat eu ut arcu. Ut nunc ex,
+              gravida vel porttitor et, pretium ac sapien.
+            </p>
+            <button class="customBtn btn-v">Get pizza...</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 right">
+          <div class="pizza-right pt-5 pl-5">
+            <img src="./img/pizza-box.png" alt="pizza box" class="img-fluid" />
+          </div>
+          <div class="img-wrapper">
+            <div class="wrap-cont">
+              <div class="img1">
+                <img src="./img/pizza-leaf.png" alt="" />
+              </div>
+              <div class="img2">
+                <img src="./img/pizza-tomabo2.png" alt="" />
+              </div>
+              <div class="img3">
+                <img src="./img/pizza-leaf-sm.png" alt="" />
+              </div>
+              <div class="img4">
+                <img src="./img/pizza-leaf-me.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- clint section -->
+    <section class="container-fluid">
+      <div class="text-center client-section w-75 mx-auto py-5">
+        <div class="row">
+          <div class="col-12">
+            <!-- client content -->
+            <div class="client-content">
+              <h6>Testimonials</h6>
+              <h1>Why Our Clients Choose Us</h1>
+              <p class="text-muted">
+                Nullam orci dui, dictum et magna sollicitudin, tempor blandit
+                erat. Maecenas suscipit tellus sit amet augue placerat fringilla
+                a id lacus. Morbi viverra volutpat ex, id pellentesque felis
+                volutpat eu. Etiam mattis laoreet leo sed accumsan. Fusce
+                tincidunt in leo lacinia condimentum..
+              </p>
+            </div>
+            <!-- client pic -->
+            <div class="client-pic">
+              <div class="pic pt-5">
+                <img
+                  src="./img/client-16-110x110.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- clienet-name -->
+              <p>Patric Stone</p>
+              <span>Freelancer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- mobile app section -->
+    <section class="app-sec">
+      <div class="container">
+        <div class="row">
+          <!-- left side -->
+          <div class="col-md-6 col-lg-6 col-12 left-app-sec">
+            <h1>Get More With <span> Our Application</span></h1>
+            <p>
+              Nunc pellentesque orci sed tempor pharetra. Morbi molestie purus
+              in interdum facilisis. Mauris commodo mi a egestas sollicitudin.
+              Mauris pharetra placerat sem vel fringilla.
+            </p>
+            <div class="list d-flex">
+              <span>01</span>
+              <p>Follow Delivery Status</p>
+            </div>
+            <div class="list d-flex">
+              <span>02</span>
+              <p>Order From Any Location</p>
+            </div>
+            <div class="list d-flex">
+              <span>03</span>
+              <p>Get Important Notices</p>
+            </div>
+            <div class="app-store mt-5">
+              <img src="./img/app-store.png" class="img-fluid" alt="" />
+              <img src="./img/google-store.png" class="img-fluid ml-3" alt="" />
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="col-md-6 col-lg-6 col-12 right-app-sec">
+            <div class="mobile">
+              <img
+                src="./img/phone in hand-22.png"
+                class="img-fluid p-5"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news- latter -->
+    <section class="news d-block">
+      <div class="container">
+        <div class="row">
+          <div class="news-left col-lg-6 col-md-6 col-12">
+            <i class="fas fa-envelope-open-text"></i>
+            <div class="content">
+              <span>Get the latest news and offers</span>
+              <h1>Subscribe to our newsletter</h1>
+            </div>
+          </div>
+          <div class="news-right col-lg-6 col-md-6 col-12">
+            <div class="input-group mt-5">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Recipient's username"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <div class="input-group-append">
+                <button class="btn" type="button" id="button-addon2">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- artical -->
+    <section class="container artical">
+      <div class="artical-header text-center mx-auto">
+        <p>Our Blog</p>
+        <h1>Recent Articles</h1>
+      </div>
+      <div class="row">
+        <!-- left col -->
+        <div class="col-lg-6 col-md-6 col-12 left-col">
+          <div class="card border-0">
+            <div class="card-img">
+              <img
+                src="./img/blog_755x470.jpg"
+                class="img-fluid"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+            <div class="card-body my-4">
+              <button class="btn btn-primary my">Go somewhere</button>
+              <h5 class="card-title">
+                All City Cafes and Restaurants Switched <br />
+                to Delivery Mode
+              </h5>
+              <p class="card-text">
+                Morbi volutpat nisi a ligula vestibulum placerat. Suspendisse
+                venenatis pulvinar nibh sed convallis. Cras elementum nunc a
+                purus sodales tincidunt. Duis fringilla quam at tellus …<br />
+                <br />
+                Sapiente quaerat possimus nobis, non veniam rem? Consequuntur,
+                ea nulla! Numquam quam, quis harum consectetur, laudantium quos
+                vero recusandae ratione adipisci excepturi cum earum quia sunt
+                repellendus doloribus ipsa itaque maxime incidunt iste porro!
+                Itaque expedita, fugiat quaerat soluta ut vitae cupiditate?
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 days ago</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- right col -->
+        <div class="col-lg-6 col-md-6 col-12 right-col">
+          <div class="card border-0 m">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <div class="card-img">
+                  <img
+                    src="./img/rest_02-706x710.jpg"
+                    class="img-fluid"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body my-4">
+                  <button class="btn btn-primary my">Food delivery</button>
+                  <h5 class="card-title">
+                    Creative Packaging as a Successful Marketing Move
+                  </h5>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 days ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 m">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <div class="card-img">
+                  <img
+                    src="./img/rest_03-706x710.jpg"
+                    class="img-fluid"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body my-4">
+                  <button class="btn btn-primary my">Food delivery</button>
+                  <h5 class="card-title">
+                    Creative Packaging as a Successful Marketing Move
+                  </h5>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 days ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 m">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <div class="card-img">
+                  <img
+                    src="./img/rest_04-706x710.jpg"
+                    class="img-fluid"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body my-4">
+                  <button class="btn btn-primary my">Food delivery</button>
+                  <h5 class="card-title">
+                    Creative Packaging as a Successful Marketing Move
+                  </h5>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 days ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="img-sec d-flex">
+              <div class="img">
+                <img
+                  src="./img/footer-banner.jpg"
+                  class="img-fluid"
+                  alt="img"
+                />
+              </div>
+              <div class="img-content">
+                <p>contact us</p>
+                <p>0188170578</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content text-center mx-auto w-75">
+          <div class="foot-img">
+            <img src="./img/logo_footer.png" class="img-fluid" alt="" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            quas nemo fugit explicabo asperiores magnam?
+          </p>
+          <div class="foot-icon mx-auto">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- booysttrap jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
